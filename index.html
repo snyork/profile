@@ -20,6 +20,7 @@
     --signal-dim: rgba(232,135,58,0.18);
     --teal: #4FA491;
     --line-enduser: #6FB6E8; /* light blue - end user connection */
+    --line-enduser-dim: rgba(111,182,232,0.18);
     --radius: 2px;
   }
   *{box-sizing:border-box; margin:0; padding:0;}
@@ -164,11 +165,12 @@
   .node.owned{color:#fff;}
   .node.partner .dot{opacity:0.8;}
   .node.partner{color:var(--muted);}
+  .node.partner.enduser .dot{background:var(--line-enduser); border-color:var(--line-enduser); opacity:1; box-shadow:0 0 0 4px var(--line-enduser-dim);}
   .diagram-caption{
     text-align:center; margin-top:14px; font-family:'IBM Plex Mono'; font-size:11px; color:var(--muted);
     letter-spacing:0.03em;
   }
-  .diagram-legend{display:flex; justify-content:center; gap:22px; margin-top:10px; font-family:'IBM Plex Mono'; font-size:10.5px; color:var(--muted);}
+  .diagram-legend{display:flex; flex-direction:column; align-items:center; gap:8px; margin-top:10px; font-family:'IBM Plex Mono'; font-size:10.5px; color:var(--muted);}
   .diagram-legend span{display:inline-flex; align-items:center; gap:7px;}
   .legend-dot{width:9px; height:9px; border-radius:50%; display:inline-block;}
   .legend-dot.owned{background:var(--signal);}
@@ -323,9 +325,9 @@
     <div>
       <div class="eyebrow">MarTech Product &amp; Platform Leader</div>
       <h1>I turn tangled marketing<br>stacks into <em>one governed,<br>revenue-ready platform.</em></h1>
-      <p class="lede"><span class="years-exp">13+</span> years owning Salesforce CRM and SFMC as enterprise product platforms for regulated industries — partnering across Adobe RT-CDP, AEM, and data teams to keep marketing activation unified and compliant. Currently AVP, Marketing Technology Delivery Lead at Chubb, and looking for the next full-time leadership seat.</p>
+      <p class="lede">MarTech product leader with <span class="years-exp">13+</span> years owning Salesforce CRM and SFMC as enterprise-scale platforms. I define product vision, drive multi-quarter roadmaps, and partner with product owners across adjacent platforms — CDP, Website, and data teams — to keep marketing activation integrated and scalable.</p>
       <div class="cta-row">
-        <a href="#contact" class="btn btn-primary">Let's talk about your team →</a>
+        <a href="#contact" class="btn btn-primary">Let's talk about your MarTech needs →</a>
       </div>
     </div>
 
@@ -342,16 +344,15 @@
         <div class="node center" style="top:50%; left:50%;"><div class="dot" aria-hidden="true"></div>Marketing<br>Activation</div>
         <div class="node owned" style="top:19.5%; left:21.7%;"><div class="dot" aria-hidden="true"></div>Salesforce<br>CRM</div>
         <div class="node owned" style="top:19.5%; left:78.3%;"><div class="dot" aria-hidden="true"></div>SFMC</div>
-        <div class="node partner" style="top:50%; left:13%;"><div class="dot" aria-hidden="true"></div>Customer<br>Data Platform</div>
+        <div class="node partner enduser" style="top:50%; left:13%;"><div class="dot" aria-hidden="true"></div>Customer<br>Data Platform</div>
         <div class="node partner" style="top:50%; left:87%;"><div class="dot" aria-hidden="true"></div>Data<br>Warehouse</div>
         <div class="node partner" style="top:80.5%; left:21.7%;"><div class="dot" aria-hidden="true"></div>Website<br>Data</div>
         <div class="node partner" style="top:80.5%; left:78.3%;"><div class="dot" aria-hidden="true"></div>Analytics<br>Data</div>
       </div>
-      <div class="diagram-caption">// product owner: CRM &amp; SFMC — cross-platform partner on the rest</div>
       <div class="diagram-legend">
-        <span><span class="legend-dot owned" aria-hidden="true"></span>Owned platform</span>
-        <span><span class="legend-dot partner" aria-hidden="true"></span>Partner collaboration</span>
-        <span><span class="legend-dot enduser" aria-hidden="true"></span>End user</span>
+        <span><span class="legend-dot owned" aria-hidden="true"></span>Owned Platform</span>
+        <span><span class="legend-dot enduser" aria-hidden="true"></span>End User</span>
+        <span><span class="legend-dot partner" aria-hidden="true"></span>Partner Collaboration</span>
       </div>
     </div>
   </div>
@@ -434,7 +435,7 @@
         </div>
 
         <div class="tl-item">
-          <div class="tl-num">6</div>
+          <div class="tl-num">→</div>
           <div class="tl-head"><h3 class="tl-role">Marketing Technology Manager</h3><span class="tl-dates">03/23 — 04/24</span></div>
           <div class="tl-company">Diageo · New York, NY</div>
           <ul>
@@ -445,7 +446,7 @@
         </div>
 
         <div class="tl-item">
-          <div class="tl-num">5</div>
+          <div class="tl-num">→</div>
           <div class="tl-head"><h3 class="tl-role">Lead Solution Architect >>> Director of MarTech</h3><span class="tl-dates">12/21 — 01/23</span></div>
           <div class="tl-company">Response Labs · Baltimore, MD (NYC Remote)</div>
           <ul>
@@ -456,7 +457,7 @@
         </div>
 
         <div class="tl-item">
-          <div class="tl-num">4</div>
+          <div class="tl-num">→</div>
           <div class="tl-head"><h3 class="tl-role">Manager of Digital Solutions</h3><span class="tl-dates">08/21 — 12/21</span></div>
           <div class="tl-company">Epsilon Data Management · Irving, TX (NYC Remote)</div>
           <ul>
@@ -465,7 +466,7 @@
         </div>
 
         <div class="tl-item">
-          <div class="tl-num">3</div>
+          <div class="tl-num">→</div>
           <div class="tl-head"><h3 class="tl-role">Sr. Platform Developer</h3><span class="tl-dates">09/20 — 08/21</span></div>
           <div class="tl-company">Experian · Costa Mesa, CA (NYC Remote)</div>
           <ul>
@@ -476,7 +477,7 @@
         </div>
 
         <div class="tl-item">
-          <div class="tl-num">2</div>
+          <div class="tl-num">→</div>
           <div class="tl-head"><h3 class="tl-role">Lead Technical Consultant</h3><span class="tl-dates">11/14 — 07/20</span></div>
           <div class="tl-company">Salesforce · New York, NY</div>
           <ul>
@@ -486,7 +487,7 @@
         </div>
 
         <div class="tl-item">
-          <div class="tl-num">1</div>
+          <div class="tl-num">→</div>
           <div class="tl-head"><h3 class="tl-role">Digital Marketing Producer</h3><span class="tl-dates">12/12 — 10/14</span></div>
           <div class="tl-company">WebMD / Medscape · New York, NY</div>
           <ul>
@@ -526,7 +527,7 @@
   <div class="wrap">
     <div class="panel contact-panel" data-reveal>
       <div class="tick tl" aria-hidden="true"></div><div class="tick tr" aria-hidden="true"></div><div class="tick bl" aria-hidden="true"></div><div class="tick br" aria-hidden="true"></div>
-      <h2>Looking for your next MarTech leader?</h2>
+      <h2>Looking for your next MarTech leader or consultant?</h2>
       <p>Open to FTE leadership and contract developer roles<br>(W2 and 1099 eligible)</p>
       <div class="contact-links">
         <a href="mailto:stephen.n.york@gmail.com" class="btn btn-primary">stephen.n.york@gmail.com</a>
