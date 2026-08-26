@@ -19,6 +19,7 @@
     --signal: #E8873A;      /* copper/amber accent - the "live trace" */
     --signal-dim: rgba(232,135,58,0.18);
     --teal: #4FA491;
+    --line-enduser: #6FB6E8; /* light blue - end user connection */
     --radius: 2px;
   }
   *{box-sizing:border-box; margin:0; padding:0;}
@@ -172,8 +173,10 @@
   .legend-dot{width:9px; height:9px; border-radius:50%; display:inline-block;}
   .legend-dot.owned{background:var(--signal);}
   .legend-dot.partner{background:transparent; border:1.5px solid var(--line);}
+  .legend-dot.enduser{background:var(--line-enduser);}
   .flow-line{stroke:var(--line); stroke-width:1.2; fill:none; opacity:0.55;}
   .flow-trace{stroke:var(--signal); stroke-width:1.6; fill:none; stroke-dasharray:6 10; animation:dash 3.4s linear infinite;}
+  .flow-enduser{stroke:var(--line-enduser); stroke-width:1.4; fill:none; stroke-dasharray:2 6; stroke-linecap:round; animation:dash 3.4s linear infinite;}
   @keyframes dash{ to{ stroke-dashoffset:-160; } }
 
   /* SECTION HEADERS */
@@ -235,9 +238,9 @@
   .bar-track{height:4px; background:rgba(255,255,255,0.08);}
   .bar-fill{height:100%; background:var(--line);}
   .bar-fill.top{background:#3FBF6F;}
-  .bar-fill.expert{background:#3fbf9d;}
+  .bar-fill.expert{background:#0fa790;}
   .bar-label span.level-top{color:#3FBF6F;}
-  .bar-label span.level-expert{color:#3fbf9d;}
+  .bar-label span.level-expert{color:#0fa790;}
 
   /* EXPERIENCE TIMELINE */
   .experience{padding:36px 0;}
@@ -396,9 +399,10 @@
         </div>
         <div class="panel stack-card">
           <h4>Engineering &amp; delivery</h4>
-          <div class="bar-item"><div class="bar-label"><span>SDLC & CI/CD MarTech Delivery</span><span class="level-top">SME</span></div><div class="bar-track"><div class="bar-fill top" style="width:100%;"></div></div></div>
-          <div class="bar-item"><div class="bar-label"><span>Vendor & Team Leadership</span><span class="level-expert">EXPERT</span></div><div class="bar-track"><div class="bar-fill expert" style="width:95%;"></div></div></div>
-          <div class="bar-item"><div class="bar-label"><span>Integration / AMPScript / SQL</span><span class="level-expert">EXPERT</span></div><div class="bar-track"><div class="bar-fill expert" style="width:95%;"></div></div></div>        </div>
+          <div class="bar-item"><div class="bar-label"><span>SDLC &amp; CI/CD MarTech Delivery</span><span class="level-top">SME</span></div><div class="bar-track"><div class="bar-fill top" style="width:100%;"></div></div></div>
+          <div class="bar-item"><div class="bar-label"><span>Vendor &amp; Team Leadership</span><span class="level-expert">EXPERT</span></div><div class="bar-track"><div class="bar-fill expert" style="width:95%;"></div></div></div>
+          <div class="bar-item"><div class="bar-label"><span>Integration / AMPScript / SQL</span><span class="level-expert">EXPERT</span></div><div class="bar-track"><div class="bar-fill expert" style="width:95%;"></div></div></div>
+        </div>
         <div class="panel stack-card">
           <h4>Data &amp; analytics</h4>
           <div class="bar-item"><div class="bar-label"><span>Segmentation</span><span>WORKING</span></div><div class="bar-track"><div class="bar-fill" style="width:80%;"></div></div></div>
